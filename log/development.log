@@ -1295,3 +1295,1176 @@ Rendered posts/_post (1.8ms)
 Rendered posts/_post (1.2ms)
 Rendered posts/_post (1.2ms)
 Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:52:08) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Completed in 55ms (View: 12, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:52:23) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.7ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:57:57) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.9ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:58:12) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:58:14) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (4.6ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Completed in 57ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:01:07) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.9ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:01:09) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.7ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.3ms)
+Completed in 48ms (View: 42, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:01:25) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.7ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:02:07) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.7ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:06:22) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:06:43) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:09:22) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (7.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.1ms)
+Completed in 71ms (View: 21, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:09:34) [POST]
+  Parameters: {"authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create", "_"=>"", "post"=>{"title"=>"1111", "user_name"=>"ff", "content"=>"111"}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'ff') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 05:09:34', 'ff', '2014-03-07 05:09:34')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "user_id", "title", "content", "updated_at") VALUES('2014-03-07 05:09:34', 4, '1111', '111', '2014-03-07 05:09:34')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Rendered posts/_post (2.3ms)
+Completed in 95ms (View: 5, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:16:03) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (2,1,4)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (2.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.1ms)
+Rendered posts/_post (1.2ms)
+Completed in 55ms (View: 47, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:16:35) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (2,1,4)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (4.9ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.1ms)
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2014-03-07 13:16:39) [DELETE]
+  Parameters: {"authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "id"=>"15"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 15) [0m
+  [4;35;1mPost Destroy (0.1ms)[0m   [0mDELETE FROM "posts" WHERE "id" = 15[0m
+Redirected to http://localhost:3001/posts
+Completed in 83ms (DB: 0) | 302 Found [http://localhost/posts/15]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:16:39) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.1ms)
+Rendered posts/_post (1.0ms)
+Completed in 53ms (View: 10, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:16:53) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (2.1ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:25:19) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (2.6ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.1ms)
+Completed in 56ms (View: 15, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:28:28) [POST]
+  Parameters: {"post"=>{"content"=>"fffff", "user_name"=>"fff", "title"=>"aaa"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'fff') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 05:28:28', 'fff', '2014-03-07 05:28:28')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:28:28', 'fffff', 5, 'aaa', '2014-03-07 05:28:28')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendered posts/_post (1.0ms)
+Completed in 108ms (View: 16, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:29:41) [POST]
+  Parameters: {"post"=>{"content"=>"fffsafsfsdf", "user_name"=>"fff", "title"=>"aaa"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'fff') LIMIT 1[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:29:41', 'fffsafsfsdf', 5, 'aaa', '2014-03-07 05:29:41')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendered posts/_post (1.2ms)
+Completed in 102ms (View: 6, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:30:11) [POST]
+  Parameters: {"post"=>{"content"=>"fffsafsfsdf", "user_name"=>"fff", "title"=>"aaa"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'fff') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:30:11', 'fffsafsfsdf', 5, 'aaa', '2014-03-07 05:30:11')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendered posts/_post (1.3ms)
+Completed in 81ms (View: 4, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:30:22) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (2,1,5)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mPost Delete all (108.0ms)[0m   [0;1mDELETE FROM "posts" WHERE 1=1[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" [0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:30:51) [GET]
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 45ms (View: 42, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:30:58) [POST]
+  Parameters: {"post"=>{"content"=>"aaaa", "user_name"=>"fffff", "title"=>"aaaa"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'fffff') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 05:30:58', 'fffff', '2014-03-07 05:30:58')[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:30:58', 'aaaa', 6, 'aaaa', '2014-03-07 05:30:58')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+Rendered posts/_post (0.8ms)
+Completed in 104ms (View: 4, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:35:13) [POST]
+  Parameters: {"post"=>{"content"=>"aaaa", "user_name"=>"fffff", "title"=>"aaaa"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'fffff') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:35:13', 'aaaa', 6, 'aaaa', '2014-03-07 05:35:13')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+Rendered posts/_post (1.3ms)
+Completed in 95ms (View: 7, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:35:35) [POST]
+  Parameters: {"post"=>{"content"=>"aaaa", "user_name"=>"fffff", "title"=>"aaaa"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'fffff') LIMIT 1[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:35:35', 'aaaa', 6, 'aaaa', '2014-03-07 05:35:35')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+Rendered posts/_post (1.2ms)
+Completed in 87ms (View: 5, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:35:41) [POST]
+  Parameters: {"post"=>{"content"=>"aaaa", "user_name"=>"fffff", "title"=>"aaaa"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'fffff') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:35:41', 'aaaa', 6, 'aaaa', '2014-03-07 05:35:41')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+Rendered posts/_post (1.2ms)
+Completed in 112ms (View: 4, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:35:46) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/posts]
+  [4;36;1mPost Delete all (90.7ms)[0m   [0;1mDELETE FROM "posts" WHERE 1=1[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:35:59) [POST]
+  Parameters: {"post"=>{"content"=>"1111", "user_name"=>"111", "title"=>"banban"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = '111') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 05:35:59', '111', '2014-03-07 05:35:59')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:35:59', '1111', 7, 'banban', '2014-03-07 05:35:59')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Rendered posts/_post (0.7ms)
+Completed in 98ms (View: 4, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:41:51) [POST]
+  Parameters: {"post"=>{"content"=>"1111", "user_name"=>"111", "title"=>"banban"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = '111') LIMIT 1[0m
+  [4;35;1mPost Create (0.3ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:41:51', '1111', 7, 'banban', '2014-03-07 05:41:51')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Rendered posts/_post (1.2ms)
+Completed in 130ms (View: 6, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:41:59) [POST]
+  Parameters: {"post"=>{"content"=>"222", "user_name"=>"111", "title"=>"banban"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = '111') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:41:59', '222', 7, 'banban', '2014-03-07 05:41:59')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Rendered posts/_post (1.7ms)
+Completed in 94ms (View: 5, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:42:12) [POST]
+  Parameters: {"post"=>{"content"=>"222", "user_name"=>"111", "title"=>"banbanfdsaf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = '111') LIMIT 1[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:42:12', '222', 7, 'banbanfdsaf', '2014-03-07 05:42:12')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Rendered posts/_post (1.1ms)
+Completed in 107ms (View: 6, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:42:44) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:42:48) [POST]
+  Parameters: {"post"=>{"content"=>"sadfdf", "user_name"=>"sdf", "title"=>"sdfsaf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'sdf') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 05:42:48', 'sdf', '2014-03-07 05:42:48')[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:42:48', 'sadfdf', 8, 'sdfsaf', '2014-03-07 05:42:48')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendered posts/_post (0.7ms)
+Completed in 102ms (View: 4, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:43:26) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (7,8)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:43:30) [POST]
+  Parameters: {"post"=>{"content"=>"sdf", "user_name"=>"sdf", "title"=>"sdaf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'sdf') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:43:30', 'sdf', 8, 'sdaf', '2014-03-07 05:43:30')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendered posts/_post (1.5ms)
+Completed in 125ms (View: 6, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:43:50) [POST]
+  Parameters: {"post"=>{"content"=>"sdf", "user_name"=>"sdf", "title"=>"sdaf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'sdf') LIMIT 1[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:43:50', 'sdf', 8, 'sdaf', '2014-03-07 05:43:50')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendered posts/_post (1.4ms)
+Completed in 104ms (View: 5, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:45:16) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (7,8)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:45:20) [POST]
+  Parameters: {"post"=>{"content"=>"asdf", "user_name"=>"df", "title"=>"asdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'df') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 05:45:20', 'df', '2014-03-07 05:45:20')[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:45:20', 'asdf', 9, 'asdf', '2014-03-07 05:45:20')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+Rendered posts/_post (1.0ms)
+Completed in 126ms (View: 5, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:45:33) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (7,8,9)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 20ms (View: 8, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:45:37) [POST]
+  Parameters: {"post"=>{"content"=>"sadf", "user_name"=>"sd", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'sd') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 05:45:37', 'sd', '2014-03-07 05:45:37')[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:45:37', 'sadf', 10, 'sdf', '2014-03-07 05:45:37')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+Rendered posts/_post (0.7ms)
+Completed in 98ms (View: 5, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:47:39) [POST]
+  Parameters: {"post"=>{"content"=>"sadf", "user_name"=>"sd", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'sd') LIMIT 1[0m
+  [4;36;1mPost Create (0.3ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:47:39', 'sadf', 10, 'sdf', '2014-03-07 05:47:39')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+Rendered posts/_post (1.4ms)
+Completed in 126ms (View: 8, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:48:04) [POST]
+  Parameters: {"post"=>{"content"=>"sadf", "user_name"=>"sd", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'sd') LIMIT 1[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:48:04', 'sadf', 10, 'sdf', '2014-03-07 05:48:04')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+Rendered posts/_post (1.1ms)
+Completed in 93ms (View: 6, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:49:29) [POST]
+  Parameters: {"post"=>{"content"=>"sadf", "user_name"=>"sd", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'sd') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:49:29', 'sadf', 10, 'sdf', '2014-03-07 05:49:29')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+Rendered posts/_post (1.7ms)
+Completed in 87ms (View: 5, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:51:12) [POST]
+  Parameters: {"post"=>{"content"=>"sadf", "user_name"=>"sd", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'sd') LIMIT 1[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:51:12', 'sadf', 10, 'sdf', '2014-03-07 05:51:12')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+Rendered posts/_post (1.4ms)
+Completed in 134ms (View: 51, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:53:22) [POST]
+  Parameters: {"post"=>{"content"=>"sadf", "user_name"=>"sd", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'sd') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:53:22', 'sadf', 10, 'sdf', '2014-03-07 05:53:22')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+Rendered posts/_post (1.4ms)
+Completed in 111ms (View: 7, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:57:34) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (7,8,9,10)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:57:37) [POST]
+  Parameters: {"post"=>{"content"=>"asdf", "user_name"=>"fds", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'fds') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 05:57:37', 'fds', '2014-03-07 05:57:37')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:57:37', 'asdf', 11, 'sdf', '2014-03-07 05:57:37')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 11) [0m
+Rendered posts/_post (0.8ms)
+Completed in 207ms (View: 6, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 13:58:06) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (7,8,9,10,11)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 13:58:10) [POST]
+  Parameters: {"post"=>{"content"=>"saf", "user_name"=>"sdf", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'sdf') LIMIT 1[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 05:58:10', 'saf', 8, 'sdf', '2014-03-07 05:58:10')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendered posts/_post (1.3ms)
+Completed in 90ms (View: 5, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 14:00:40) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (7,9,8,10,11)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.0ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:00:43) [POST]
+  Parameters: {"post"=>{"content"=>"sdf", "user_name"=>"sdf", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'sdf') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 06:00:43', 'sdf', 8, 'sdf', '2014-03-07 06:00:43')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendered posts/_post (1.6ms)
+Completed in 106ms (View: 5, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 14:01:05) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (7,9,8,10,11)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (2.7ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 52ms (View: 44, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:01:09) [POST]
+  Parameters: {"post"=>{"content"=>"sdf", "user_name"=>"dsf", "title"=>"dsf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'dsf') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 06:01:09', 'dsf', '2014-03-07 06:01:09')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 06:01:09', 'sdf', 12, 'dsf', '2014-03-07 06:01:09')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 12) [0m
+Rendered posts/_post (0.8ms)
+Completed in 89ms (View: 5, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 14:02:46) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (7,9,8,10,11,12)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:02:48) [POST]
+  Parameters: {"post"=>{"content"=>"f", "user_name"=>"sdf", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'sdf') LIMIT 1[0m
+  [4;35;1mPost Create (0.3ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 06:02:48', 'f', 8, 'sdf', '2014-03-07 06:02:48')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendered posts/_post (1.2ms)
+Completed in 101ms (View: 4, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:03:00) [POST]
+  Parameters: {"post"=>{"content"=>"fffffffff", "user_name"=>"sdf", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'sdf') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 06:03:00', 'fffffffff', 8, 'sdf', '2014-03-07 06:03:00')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendered posts/_post (1.1ms)
+Completed in 99ms (View: 4, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:03:28) [POST]
+  Parameters: {"post"=>{"content"=>"aaaaaaa", "user_name"=>"sdf", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'sdf') LIMIT 1[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 06:03:28', 'aaaaaaa', 8, 'sdf', '2014-03-07 06:03:28')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendered posts/_post (1.9ms)
+Completed in 108ms (View: 6, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 14:06:23) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (7,9,8,10,11,12)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 52ms (View: 10, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:06:25) [POST]
+  Parameters: {"post"=>{"content"=>"asdf", "user_name"=>"sdfs", "title"=>"sdfa"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'sdfs') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 06:06:25', 'sdfs', '2014-03-07 06:06:25')[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 06:06:25', 'asdf', 13, 'sdfa', '2014-03-07 06:06:25')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 13) [0m
+Rendered posts/_post (0.9ms)
+Completed in 97ms (View: 5, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 14:06:47) [GET]
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (7,9,8,10,11,12,13)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:06:50) [POST]
+  Parameters: {"post"=>{"content"=>"asfd", "user_name"=>"asdf", "title"=>"sadf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'asdf') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 06:06:50', 'asdf', '2014-03-07 06:06:50')[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 06:06:50', 'asfd', 14, 'sadf', '2014-03-07 06:06:50')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 14) [0m
+Rendered posts/_post (0.7ms)
+Completed in 94ms (View: 4, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 14:07:09) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (7,9,8,10,11,12,13,14)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:07:14) [POST]
+  Parameters: {"post"=>{"content"=>"afdff", "user_name"=>"saf", "title"=>"dsf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'saf') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 06:07:14', 'saf', '2014-03-07 06:07:14')[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 06:07:14', 'afdff', 15, 'dsf', '2014-03-07 06:07:14')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 15) [0m
+Rendered posts/_post (0.7ms)
+Completed in 101ms (View: 4, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 14:08:33) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (7,9,8,10,11,12,13,14,15)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:08:34) [POST]
+  Parameters: {"post"=>{"content"=>"", "user_name"=>"", "title"=>""}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 06:08:34', '', NULL, '', '2014-03-07 06:08:34')[0m
+Rendering posts/create
+Rendered posts/_post (0.2ms)
+Completed in 88ms (View: 5, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:08:41) [POST]
+  Parameters: {"post"=>{"content"=>"sdaf", "user_name"=>"sadf", "title"=>"sf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'sadf') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 06:08:41', 'sadf', '2014-03-07 06:08:41')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 06:08:41', 'sdaf', 16, 'sf', '2014-03-07 06:08:41')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 16) [0m
+Rendered posts/_post (0.9ms)
+Completed in 104ms (View: 4, DB: 0) | 200 OK [http://localhost/posts]
+  [4;35;1mPost Delete all (94.7ms)[0m   [0mDELETE FROM "posts" WHERE 1=1[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 14:10:58) [GET]
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:11:04) [POST]
+  Parameters: {"post"=>{"content"=>"dsaf", "user_name"=>"sdf", "title"=>"sdf"}, "_"=>"", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'sdf') LIMIT 1[0m
+  [4;36;1mPost Create (0.3ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 06:11:04', 'dsaf', 8, 'sdf', '2014-03-07 06:11:04')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendered posts/_post (1.1ms)
+Completed in 113ms (View: 26, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 14:11:15) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.1ms)
+Completed in 26ms (View: 18, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:11:20) [POST]
+  Parameters: {"post"=>{"content"=>"asdf", "user_name"=>"sdaf", "title"=>"sadf"}, "authenticity_token"=>"J8jWQvceoZVpee5yTa3C2hlIDDU6t9M8VWFvCRIkejI=", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'sdaf') LIMIT 1[0m
+  [4;35;1mUser Create (1.3ms)[0m   [0mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 06:11:20', 'sdaf', '2014-03-07 06:11:20')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "content", "user_id", "title", "updated_at") VALUES('2014-03-07 06:11:20', 'asdf', 17, 'sadf', '2014-03-07 06:11:20')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 17) [0m
+Rendered posts/_post (1.1ms)
+Completed in 202ms (View: 5, DB: 2) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 192.168.10.60 at 2014-03-07 14:13:56) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (8,17)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (2.5ms)
+Rendered posts/_post (0.2ms)
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 14:14:13) [POST]
+  Parameters: {"authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"title"=>"test", "user_name"=>"韩冰", "content"=>"11111"}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = '韩冰') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 06:14:13', '韩冰', '2014-03-07 06:14:13')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:14:13', 'test', 18, '11111', '2014-03-07 06:14:13')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 18) [0m
+Rendered posts/_post (1.0ms)
+Completed in 97ms (View: 15, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 192.168.10.171 at 2014-03-07 14:14:19) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (8,17,18)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#index (for 192.168.10.98 at 2014-03-07 14:14:28) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (8,17,18)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.1ms)
+Rendered posts/_post (0.1ms)
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:14:49) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"55", "user_name"=>"122", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = '122') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 06:14:49', '122', '2014-03-07 06:14:49')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:14:49', '55', 19, '', '2014-03-07 06:14:49')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 19) [0m
+Rendered posts/_post (0.9ms)
+Completed in 150ms (View: 5, DB: 1) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:14:52) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"55", "user_name"=>"122", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = '122') LIMIT 1[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:14:52', '55', 19, '', '2014-03-07 06:14:52')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 19) [0m
+Rendered posts/_post (1.1ms)
+Completed in 96ms (View: 5, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:14:53) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"55", "user_name"=>"122", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = '122') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:14:53', '55', 19, '', '2014-03-07 06:14:53')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 19) [0m
+Rendered posts/_post (1.3ms)
+Completed in 92ms (View: 4, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:14:53) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"55", "user_name"=>"122", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = '122') LIMIT 1[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:14:53', '55', 19, '', '2014-03-07 06:14:53')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 19) [0m
+Rendered posts/_post (1.8ms)
+Completed in 96ms (View: 5, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:14:53) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"55", "user_name"=>"122", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = '122') LIMIT 1[0m
+  [4;36;1mPost Create (0.2ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:14:53', '55', 19, '', '2014-03-07 06:14:53')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 19) [0m
+Rendered posts/_post (1.2ms)
+Completed in 142ms (View: 4, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:14:53) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"55", "user_name"=>"122", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = '122') LIMIT 1[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:14:53', '55', 19, '', '2014-03-07 06:14:53')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 19) [0m
+Rendered posts/_post (1.6ms)
+Completed in 98ms (View: 5, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:14:54) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"55", "user_name"=>"122", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = '122') LIMIT 1[0m
+  [4;36;1mPost Create (0.2ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:14:54', '55', 19, '', '2014-03-07 06:14:54')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 19) [0m
+Rendered posts/_post (1.2ms)
+Completed in 88ms (View: 4, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:14:54) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"55", "user_name"=>"122", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = '122') LIMIT 1[0m
+  [4;35;1mPost Create (0.4ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:14:54', '55', 19, '', '2014-03-07 06:14:54')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 19) [0m
+Rendered posts/_post (1.2ms)
+Completed in 110ms (View: 4, DB: 1) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:15:05) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"", "user_name"=>"", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:05', '', NULL, '', '2014-03-07 06:15:05')[0m
+Rendering posts/create
+Rendered posts/_post (0.2ms)
+Completed in 118ms (View: 4, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:15:05) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"", "user_name"=>"", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mPost Create (0.3ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:05', '', NULL, '', '2014-03-07 06:15:05')[0m
+Rendering posts/create
+Rendered posts/_post (0.2ms)
+Completed in 99ms (View: 4, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:15:06) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"", "user_name"=>"", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;35;1mPost Create (0.3ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:06', '', NULL, '', '2014-03-07 06:15:06')[0m
+Rendering posts/create
+Rendered posts/_post (0.2ms)
+Completed in 86ms (View: 3, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:15:06) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"", "user_name"=>"", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mPost Create (0.2ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:06', '', NULL, '', '2014-03-07 06:15:06')[0m
+Rendering posts/create
+Rendered posts/_post (0.3ms)
+Completed in 89ms (View: 4, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.98 at 2014-03-07 14:15:06) [POST]
+  Parameters: {"authenticity_token"=>"Tz14lkWgKW8Ppdi6XMoHzqonCq+Tdn26FoAMwjoSYAA=", "post"=>{"title"=>"", "user_name"=>"", "content"=>""}, "_"=>"", "commit"=>"Create"}
+  [4;35;1mPost Create (0.3ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:06', '', NULL, '', '2014-03-07 06:15:06')[0m
+Rendering posts/create
+Rendered posts/_post (0.2ms)
+Completed in 99ms (View: 10, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.171 at 2014-03-07 14:15:07) [POST]
+  Parameters: {"authenticity_token"=>"oshWHSlgXrGKUcYUBOiY6kaiUZs8yl0Gu5I8ZlyDcKM=", "post"=>{"title"=>"ひにひみ", "user_name"=>"LIJIAN", "content"=>"ああああああああああああああああああああｓ\n（・ω・）ｎ"}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'LIJIAN') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES('2014-03-07 06:15:07', 'LIJIAN', '2014-03-07 06:15:07')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:07', 'ひにひみ', 20, 'ああああああああああああああああああああｓ
+（・ω・）ｎ', '2014-03-07 06:15:07')[0m
+Rendering posts/create
+  [4;35;1mUser Load (5.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 20) [0m
+Rendered posts/_post (37.2ms)
+Completed in 135ms (View: 35, DB: 6) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.171 at 2014-03-07 14:15:10) [POST]
+  Parameters: {"authenticity_token"=>"oshWHSlgXrGKUcYUBOiY6kaiUZs8yl0Gu5I8ZlyDcKM=", "post"=>{"title"=>"ひにひみ", "user_name"=>"LIJIAN", "content"=>"ああああああああああああああああああああｓ\n（・ω・）ｎ"}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'LIJIAN') LIMIT 1[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:10', 'ひにひみ', 20, 'ああああああああああああああああああああｓ
+（・ω・）ｎ', '2014-03-07 06:15:10')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 20) [0m
+Rendered posts/_post (1.3ms)
+Completed in 71ms (View: 5, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.171 at 2014-03-07 14:15:11) [POST]
+  Parameters: {"authenticity_token"=>"oshWHSlgXrGKUcYUBOiY6kaiUZs8yl0Gu5I8ZlyDcKM=", "post"=>{"title"=>"ひにひみ", "user_name"=>"LIJIAN", "content"=>"ああああああああああああああああああああｓ\n（・ω・）ｎ"}, "_"=>"", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LIJIAN') LIMIT 1[0m
+  [4;36;1mPost Create (0.2ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:11', 'ひにひみ', 20, 'ああああああああああああああああああああｓ
+（・ω・）ｎ', '2014-03-07 06:15:11')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 20) [0m
+Rendered posts/_post (2.1ms)
+Completed in 69ms (View: 6, DB: 1) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.171 at 2014-03-07 14:15:11) [POST]
+  Parameters: {"authenticity_token"=>"oshWHSlgXrGKUcYUBOiY6kaiUZs8yl0Gu5I8ZlyDcKM=", "post"=>{"title"=>"ひにひみ", "user_name"=>"LIJIAN", "content"=>"ああああああああああああああああああああｓ\n（・ω・）ｎ"}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'LIJIAN') LIMIT 1[0m
+  [4;35;1mPost Create (0.3ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:11', 'ひにひみ', 20, 'ああああああああああああああああああああｓ
+（・ω・）ｎ', '2014-03-07 06:15:11')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 20) [0m
+Rendered posts/_post (1.1ms)
+Completed in 81ms (View: 4, DB: 1) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.171 at 2014-03-07 14:15:11) [POST]
+  Parameters: {"authenticity_token"=>"oshWHSlgXrGKUcYUBOiY6kaiUZs8yl0Gu5I8ZlyDcKM=", "post"=>{"title"=>"ひにひみ", "user_name"=>"LIJIAN", "content"=>"ああああああああああああああああああああｓ\n（・ω・）ｎ"}, "_"=>"", "commit"=>"Create"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LIJIAN') LIMIT 1[0m
+  [4;36;1mPost Create (0.2ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:11', 'ひにひみ', 20, 'ああああああああああああああああああああｓ
+（・ω・）ｎ', '2014-03-07 06:15:11')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 20) [0m
+Rendered posts/_post (1.6ms)
+Completed in 108ms (View: 5, DB: 1) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.171 at 2014-03-07 14:15:12) [POST]
+  Parameters: {"authenticity_token"=>"oshWHSlgXrGKUcYUBOiY6kaiUZs8yl0Gu5I8ZlyDcKM=", "post"=>{"title"=>"ひにひみ", "user_name"=>"LIJIAN", "content"=>"ああああああああああああああああああああｓ\n（・ω・）ｎ"}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'LIJIAN') LIMIT 1[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:12', 'ひにひみ', 20, 'ああああああああああああああああああああｓ
+（・ω・）ｎ', '2014-03-07 06:15:12')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 20) [0m
+Rendered posts/_post (1.4ms)
+Completed in 88ms (View: 5, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.171 at 2014-03-07 14:15:12) [POST]
+  Parameters: {"authenticity_token"=>"oshWHSlgXrGKUcYUBOiY6kaiUZs8yl0Gu5I8ZlyDcKM=", "post"=>{"title"=>"ひにひみ", "user_name"=>"LIJIAN", "content"=>"ああああああああああああああああああああｓ\n（・ω・）ｎ"}, "_"=>"", "commit"=>"Create"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LIJIAN') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:12', 'ひにひみ', 20, 'ああああああああああああああああああああｓ
+（・ω・）ｎ', '2014-03-07 06:15:12')[0m
+Rendering posts/create
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 20) [0m
+Rendered posts/_post (1.1ms)
+Completed in 84ms (View: 4, DB: 0) | 200 OK [http://192.168.10.60/posts]
+
+
+Processing PostsController#create (for 192.168.10.171 at 2014-03-07 14:15:13) [POST]
+  Parameters: {"authenticity_token"=>"oshWHSlgXrGKUcYUBOiY6kaiUZs8yl0Gu5I8ZlyDcKM=", "post"=>{"title"=>"ひにひみ", "user_name"=>"LIJIAN", "content"=>"ああああああああああああああああああああｓ\n（・ω・）ｎ"}, "_"=>"", "commit"=>"Create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'LIJIAN') LIMIT 1[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "user_id", "content", "updated_at") VALUES('2014-03-07 06:15:13', 'ひにひみ', 20, 'ああああああああああああああああああああｓ
+（・ω・）ｎ', '2014-03-07 06:15:13')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 20) [0m
+Rendered posts/_post (1.1ms)
+Completed in 83ms (View: 4, DB: 0) | 200 OK [http://192.168.10.60/posts]
