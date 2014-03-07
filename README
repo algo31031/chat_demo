@@ -1,4 +1,15 @@
 A realtime chat demo, based on Faye.
 
+git@github.com:algo31031/chat_demo.git
+
+cd chat_demo
+
+rackup faye.ru -s thin -E production
+
+thin start -p 3001
+
+localhost:3001/posts
+
+
 http://api.rubyonrails.org/v2.3.11/
 http://faye.jcoglan.com/ruby.html
