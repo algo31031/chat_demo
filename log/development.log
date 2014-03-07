@@ -1,0 +1,1297 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (91.9ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20140307023237)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20140307023237')[0m
+Migrating to CreatePosts (20140307023304)
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "content" text, "title" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20140307023304')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 10:42:33) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2014-03-07 10:42:37) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:01:23) [GET]
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/posts/index.html.erb:
+1: <h1>New post</h1>
+2: 
+3: <% form_for(@post) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/posts/index.html.erb:3
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:04:52) [GET]
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 11:05:54) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"1111111", "user_name"=>"banban", "title"=>"222222"}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'banban') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "name") VALUES('2014-03-07 03:05:54', '2014-03-07 03:05:54', 'banban')[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(2, '1111111', '2014-03-07 03:05:54', '2014-03-07 03:05:54', '222222')[0m
+Redirected to http://localhost:3001/posts/1
+Completed in 193ms (DB: 0) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2014-03-07 11:05:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:05:59) [GET]
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:06:01) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:06:41) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #34 of app/views/posts/index.html.erb:
+31: 
+32: <% @posts.each do |post| %>
+33:   <tr>
+34:     <td><%=h post.user.name %></td>
+35:     <td><%=h post.content %></td>
+36:     <td><%=h post.title %></td>
+37:     <td><%= link_to 'Show', post %></td>
+
+    app/views/posts/index.html.erb:34
+    app/views/posts/index.html.erb:32:in `each'
+    app/views/posts/index.html.erb:32
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (65.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mPost Update (0.0ms)[0m   [0;1mSQLite3::SQLException: near "WHERE": syntax error: UPDATE "posts" SET user_id WHERE (1) [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" LIMIT 1[0m
+  [4;36;1mPost Update (0.3ms)[0m   [0;1mUPDATE "posts" SET "user_id" = 1, "updated_at" = '2014-03-07 03:09:13' WHERE "id" = 1[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:09:18) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 11:09:54) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"yyyyyyyyyyyyyyyyyy", "user_name"=>"tester", "title"=>"222222"}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'tester') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "name") VALUES('2014-03-07 03:09:54', '2014-03-07 03:09:54', 'tester')[0m
+
+ActiveRecord::AssociationTypeMismatch (User(#70097438370240) expected, got TrueClass(#70097487433980)):
+  app/models/post.rb:13:in `check_user'
+  app/controllers/posts_controller.rb:46:in `create'
+  app/controllers/posts_controller.rb:45:in `create'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (65.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 11:10:55) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"yyyyyyyyyyyyyyyyyy", "user_name"=>"tester", "title"=>"222222"}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'tester') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "name") VALUES('2014-03-07 03:10:55', '2014-03-07 03:10:55', 'tester')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(2, 'yyyyyyyyyyyyyyyyyy', '2014-03-07 03:10:55', '2014-03-07 03:10:55', '222222')[0m
+Redirected to http://localhost:3001/posts/idnex?notice=Post+was+successfully+created.
+Completed in 134ms (DB: 0) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2014-03-07 11:10:55) [GET]
+  Parameters: {"notice"=>"Post was successfully created.", "id"=>"idnex"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=idnex):
+  app/controllers/posts_controller.rb:16:in `show'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:12:17) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:12:21) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 11:12:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"yyyyy", "user_name"=>"tester", "title"=>"xxx"}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'tester') LIMIT 1[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(2, 'yyyyy', '2014-03-07 03:12:36', '2014-03-07 03:12:36', 'xxx')[0m
+Redirected to http://localhost:3001/posts/idnex?notice=Post+was+successfully+created.
+Completed in 147ms (DB: 0) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2014-03-07 11:12:36) [GET]
+  Parameters: {"notice"=>"Post was successfully created.", "id"=>"idnex"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=idnex):
+  app/controllers/posts_controller.rb:16:in `show'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (22.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:15:08) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 11:15:14) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"yyyyy", "user_name"=>"tester", "title"=>"xxx11"}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'tester') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(2, 'yyyyy', '2014-03-07 03:15:14', '2014-03-07 03:15:14', 'xxx11')[0m
+Redirected to http://localhost:3001/posts
+Completed in 137ms (DB: 0) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:15:15) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 58ms (View: 14, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:17:11) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:17:48) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 19ms (View: 11, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:21:04) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 54ms (View: 48, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:28:30) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+
+ActionView::TemplateError (undefined method `include?' for :post:Symbol) on line #35 of app/views/posts/index.html.erb:
+32:       <th>Title</th>
+33:     </tr>
+34: 
+35:     <%= render :post, :collections => :@posts %>
+36: 
+37:   </table>
+38: 
+
+    app/views/posts/index.html.erb:35
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:31:40) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/posts/_post.html.erb:
+1: <tr id="post_<%= post.id %>">
+2:   <td><%=h post.user.name %></td>
+3:   <td><%=h post.content %></td>
+4:   <td><%=h post.title %></td>
+
+    app/views/posts/_post.html.erb:1
+    app/views/posts/index.html.erb:35
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:33:15) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (2.2ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Completed in 56ms (View: 13, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:33:46) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (2.2ms)
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:37:57) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (3.9ms)
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (8.4ms)
+Completed in 61ms (View: 55, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 11:38:47) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"123123131233", "user_name"=>"asdf", "title"=>"1111"}}
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/posts/_post.html.erb:
+2:   <td>
+3:     <strong><%=h post.title %></strong></br>
+4:     <%=h post.content %></br>
+5:     <%=h post.user.name %>|<%= post.created_at.to_s(db) %>
+6:   </td>
+7:   <td><%= link_to 'Show', post %></td>
+8:   <td><%= link_to 'Edit', edit_post_path(post) %></td>
+
+    app/views/posts/_post.html.erb:5
+    app/controllers/posts_controller.rb:46:in `create'
+    app/controllers/posts_controller.rb:45:in `create'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:38:55) [GET]
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+
+ActionView::TemplateError (undefined local variable or method `db' for #<ActionView::Base:0x7f81a9c12280>) on line #5 of app/views/posts/_post.html.erb:
+2:   <td>
+3:     <strong><%=h post.title %></strong></br>
+4:     <%=h post.content %></br>
+5:     <%=h post.user.name %>|<%= post.created_at.to_s(db) %>
+6:   </td>
+7:   <td><%= link_to 'Show', post %></td>
+8:   <td><%= link_to 'Edit', edit_post_path(post) %></td>
+
+    app/views/posts/_post.html.erb:5
+    app/views/posts/index.html.erb:29
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:39:01) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+
+ActionView::TemplateError (undefined local variable or method `db' for #<ActionView::Base:0x7f81aa1507b0>) on line #5 of app/views/posts/_post.html.erb:
+2:   <td>
+3:     <strong><%=h post.title %></strong></br>
+4:     <%=h post.content %></br>
+5:     <%=h post.user.name %>|<%= post.created_at.to_s(db) %>
+6:   </td>
+7:   <td><%= link_to 'Show', post %></td>
+8:   <td><%= link_to 'Edit', edit_post_path(post) %></td>
+
+    app/views/posts/_post.html.erb:5
+    app/views/posts/index.html.erb:29
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:39:07) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (2.8ms)
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.4ms)
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 11:40:40) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"tryyyyyy", "user_name"=>"algo", "title"=>"test"}}
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/posts/_post.html.erb:
+2:   <td>
+3:     <h4><%=h post.title %></h4></br>
+4:     <%=h post.content %></br>
+5:     <strong><%=h post.user.name %></strong> | <%= post.created_at.to_s(:db) %>
+6:   </td>
+7:   <td><%= link_to 'Show', post %></td>
+8:   <td><%= link_to 'Edit', edit_post_path(post) %></td>
+
+    app/views/posts/_post.html.erb:5
+    app/controllers/posts_controller.rb:46:in `create'
+    app/controllers/posts_controller.rb:45:in `create'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:40:48) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (2.3ms)
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.4ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/posts]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" [0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 11:43:45) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"cccccccc", "user_name"=>"xyz", "title"=>"bbbbbbb"}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'xyz') LIMIT 1[0m
+  [4;36;1mPost Create (0.2ms)[0m   [0;1mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(NULL, 'cccccccc', '2014-03-07 03:43:45', '2014-03-07 03:43:45', 'bbbbbbb')[0m
+Completed in 168ms (View: 1, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:43:49) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/posts/_post.html.erb:
+2:   <td>
+3:     <h4><%=h post.title %></h4></br>
+4:     <%=h post.content %></br>
+5:     <strong><%=h post.user.name %></strong> | <%= post.created_at.to_s(:db) %>
+6:   </td>
+7:   <td><%= link_to 'Show', post %></td>
+8:   <td><%= link_to 'Edit', edit_post_path(post) %></td>
+
+    app/views/posts/_post.html.erb:5
+    app/views/posts/index.html.erb:29
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (67.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:43:52) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/posts/_post.html.erb:
+2:   <td>
+3:     <h4><%=h post.title %></h4></br>
+4:     <%=h post.content %></br>
+5:     <strong><%=h post.user.name %></strong> | <%= post.created_at.to_s(:db) %>
+6:   </td>
+7:   <td><%= link_to 'Show', post %></td>
+8:   <td><%= link_to 'Edit', edit_post_path(post) %></td>
+
+    app/views/posts/_post.html.erb:5
+    app/views/posts/index.html.erb:29
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+  [4;35;1mPost Update (0.2ms)[0m   [0mUPDATE "posts" SET "user_id" = 1, "updated_at" = '2014-03-07 03:44:14' WHERE "id" = 5[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:44:52) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.9ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:45:22) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (37.9ms)
+Rendered posts/_post (1.6ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.5ms)
+Completed in 57ms (View: 50, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 11:50:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"11111111111111", "user_name"=>"banban", "title"=>""}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'banban') LIMIT 1[0m
+  [4;36;1mPost Create (0.3ms)[0m   [0;1mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(1, '11111111111111', '2014-03-07 03:50:36', '2014-03-07 03:50:36', '')[0m
+Completed in 129ms (View: 1, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:51:15) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (2.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.1ms)
+Rendered posts/_post (2.2ms)
+Rendered posts/_post (1.3ms)
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 11:53:52) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"11111111111111", "user_name"=>"banban", "title"=>""}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'banban') LIMIT 1[0m
+  [4;36;1mPost Create (15.6ms)[0m   [0;1mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(1, '11111111111111', '2014-03-07 03:53:52', '2014-03-07 03:53:52', '')[0m
+Completed in 147ms (View: 4, DB: 16) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:53:55) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (2.0ms)
+Rendered posts/_post (1.5ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.3ms)
+Completed in 121ms (View: 61, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:53:56) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 29ms (View: 14, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 11:54:12) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"xxxx", "user_name"=>"403", "title"=>"ttttt"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = '403') LIMIT 1[0m
+  [4;36;1mPost Create (0.2ms)[0m   [0;1mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(NULL, 'xxxx', '2014-03-07 03:54:12', '2014-03-07 03:54:12', 'ttttt')[0m
+Completed in 168ms (View: 1, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:54:14) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/posts/_post.html.erb:
+2:   <td>
+3:     <h4><%=h post.title %></h4></br>
+4:     <%=h post.content %></br>
+5:     <strong><%=h post.user.name %></strong> | <%= post.created_at.to_s(:db) %>
+6:   </td>
+7:   <td><%= link_to 'Edit', edit_post_path(post) %>|<%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+8: </tr>
+
+    app/views/posts/_post.html.erb:5
+    app/views/posts/index.html.erb:29
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:54:20) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/posts/_post.html.erb:
+2:   <td>
+3:     <h4><%=h post.title %></h4></br>
+4:     <%=h post.content %></br>
+5:     <strong><%=h post.user.name %></strong> | <%= post.created_at.to_s(:db) %>
+6:   </td>
+7:   <td><%= link_to 'Edit', edit_post_path(post) %>|<%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+8: </tr>
+
+    app/views/posts/_post.html.erb:5
+    app/views/posts/index.html.erb:29
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 11:54:22) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/posts/_post.html.erb:
+2:   <td>
+3:     <h4><%=h post.title %></h4></br>
+4:     <%=h post.content %></br>
+5:     <strong><%=h post.user.name %></strong> | <%= post.created_at.to_s(:db) %>
+6:   </td>
+7:   <td><%= link_to 'Edit', edit_post_path(post) %>|<%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+8: </tr>
+
+    app/views/posts/_post.html.erb:5
+    app/views/posts/index.html.erb:29
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.id DESC LIMIT 1[0m
+  [4;35;1mPost Update (0.2ms)[0m   [0mUPDATE "posts" SET "user_id" = 1, "updated_at" = '2014-03-07 03:54:28' WHERE "id" = 8[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" [0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:25:41) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (2.3ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.1ms)
+Rendered posts/_post (1.1ms)
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 12:25:47) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"sdfsfdfsfdaf", "user_name"=>"vvv", "title"=>"ff"}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'vvv') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(NULL, 'sdfsfdfsfdaf', '2014-03-07 04:25:47', '2014-03-07 04:25:47', 'ff')[0m
+Rendering posts/create
+Completed in 226ms (View: 3, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:25:51) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+
+ActionView::TemplateError (undefined local variable or method `匿名' for #<ActionView::Base:0x7f81aa09d7f0>) on line #5 of app/views/posts/_post.html.erb:
+2:   <td>
+3:     <h4><%=h post.title %></h4></br>
+4:     <%=h post.content %></br>
+5:     <strong><%=h post.user.try(:name) || 匿名 %></strong> | <%= post.created_at.to_s(:db) %>
+6:   </td>
+7:   <td><%= link_to 'Edit', edit_post_path(post) %>|<%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+8: </tr>
+
+    app/views/posts/_post.html.erb:5
+    app/views/posts/index.html.erb:29
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (72.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:26:04) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.7ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" ORDER BY users.id DESC LIMIT 1[0m
+  [4;35;1mPost Create (0.3ms)[0m   [0mINSERT INTO "posts" ("created_at", "user_id", "title", "updated_at", "content") VALUES('2014-03-07 04:27:26', 2, NULL, '2014-03-07 04:27:26', NULL)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:27:58) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (1,2)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (6.2ms)
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 36ms (View: 25, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2014-03-07 12:28:02) [DELETE]
+  Parameters: {"id"=>"10", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54="}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 10) [0m
+  [4;36;1mPost Destroy (0.1ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 10[0m
+Redirected to http://localhost:3001/posts
+Completed in 86ms (DB: 0) | 302 Found [http://localhost/posts/10]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:28:02) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.7ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:29:36) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.6ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.1ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+
+ActionView::TemplateError (No expansion found for :default) on line #8 of app/views/layouts/posts.html.erb:
+5: <head>
+6:   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+7:   <title>Posts: <%= controller.action_name %></title>
+8:   <%= javascript_include_tag :default %>
+9:   <%= stylesheet_link_tag 'scaffold' %>
+10: </head>
+11: <body>
+
+    app/views/layouts/posts.html.erb:8
+    app/controllers/posts_controller.rb:7:in `index'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/hanbing/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:29:43) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.6ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.1ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.1ms)
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2014-03-07 12:29:59) [DELETE]
+  Parameters: {"id"=>"9", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54="}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+  [4;36;1mPost Destroy (0.2ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 9[0m
+Redirected to http://localhost:3001/posts
+Completed in 83ms (DB: 0) | 302 Found [http://localhost/posts/9]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:29:59) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2014-03-07 12:30:01) [DELETE]
+  Parameters: {"id"=>"8", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54="}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 8) [0m
+  [4;36;1mPost Destroy (0.1ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 8[0m
+Redirected to http://localhost:3001/posts
+Completed in 86ms (DB: 0) | 302 Found [http://localhost/posts/8]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:30:01) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.5ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 58ms (View: 52, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2014-03-07 12:30:02) [DELETE]
+  Parameters: {"id"=>"7", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54="}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 7) [0m
+  [4;36;1mPost Destroy (0.2ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 7[0m
+Redirected to http://localhost:3001/posts
+Completed in 88ms (DB: 0) | 302 Found [http://localhost/posts/7]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:30:03) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2014-03-07 12:30:04) [DELETE]
+  Parameters: {"id"=>"6", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54="}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 6) [0m
+  [4;36;1mPost Destroy (0.2ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 6[0m
+Redirected to http://localhost:3001/posts
+Completed in 82ms (DB: 0) | 302 Found [http://localhost/posts/6]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:30:04) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.2ms)
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 12:30:10) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"sdfsfaf", "user_name"=>"fffff", "title"=>"sdfasf"}, "_"=>""}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'fffff') LIMIT 1[0m
+  [4;36;1mPost Create (0.3ms)[0m   [0;1mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(NULL, 'sdfsfaf', '2014-03-07 04:30:10', '2014-03-07 04:30:10', 'sdfasf')[0m
+Rendering posts/create
+Completed in 85ms (View: 1, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 12:31:12) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"sdfsfaf", "user_name"=>"fffff", "title"=>"sdfasf"}, "_"=>""}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'fffff') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(NULL, 'sdfsfaf', '2014-03-07 04:31:12', '2014-03-07 04:31:12', 'sdfasf')[0m
+Rendering posts/create
+Rendered posts/_post (2.1ms)
+Completed in 98ms (View: 5, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:31:14) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.4ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.7ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2014-03-07 12:31:19) [DELETE]
+  Parameters: {"id"=>"11", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54="}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 11) [0m
+  [4;36;1mPost Destroy (0.1ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 11[0m
+Redirected to http://localhost:3001/posts
+Completed in 86ms (DB: 0) | 302 Found [http://localhost/posts/11]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:31:19) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.5ms)
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.3ms)
+Completed in 56ms (View: 14, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2014-03-07 12:31:21) [DELETE]
+  Parameters: {"id"=>"12", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54="}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+  [4;36;1mPost Destroy (0.1ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 12[0m
+Redirected to http://localhost:3001/posts
+Completed in 87ms (DB: 0) | 302 Found [http://localhost/posts/12]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:31:21) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.9ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 12:33:53) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"fsfd", "user_name"=>"11", "title"=>"xxx"}, "_"=>""}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = '11') LIMIT 1[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(NULL, 'fsfd', '2014-03-07 04:33:53', '2014-03-07 04:33:53', 'xxx')[0m
+Rendering posts/create
+Rendered posts/_post (1.5ms)
+Completed in 88ms (View: 3, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2014-03-07 12:35:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54=", "post"=>{"content"=>"fsfd", "user_name"=>"11", "title"=>"xxx"}, "_"=>""}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = '11') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "name") VALUES('2014-03-07 04:35:09', '2014-03-07 04:35:09', '11')[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("user_id", "content", "created_at", "updated_at", "title") VALUES(3, 'fsfd', '2014-03-07 04:35:09', '2014-03-07 04:35:09', 'xxx')[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendered posts/_post (2.0ms)
+Completed in 127ms (View: 3, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2014-03-07 12:35:13) [DELETE]
+  Parameters: {"id"=>"13", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54="}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 13) [0m
+  [4;36;1mPost Destroy (0.1ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 13[0m
+Redirected to http://localhost:3001/posts
+Completed in 83ms (DB: 0) | 302 Found [http://localhost/posts/13]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:35:13) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1,3)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2014-03-07 12:35:15) [DELETE]
+  Parameters: {"id"=>"14", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54="}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 14) [0m
+  [4;36;1mPost Destroy (0.2ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 14[0m
+Redirected to http://localhost:3001/posts
+Completed in 92ms (DB: 0) | 302 Found [http://localhost/posts/14]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:35:15) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (2.0ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (39.1ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.2ms)
+Completed in 57ms (View: 50, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2014-03-07 12:35:19) [DELETE]
+  Parameters: {"id"=>"2", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54="}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+  [4;36;1mPost Destroy (0.1ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 2[0m
+Redirected to http://localhost:3001/posts
+Completed in 93ms (DB: 0) | 302 Found [http://localhost/posts/2]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:35:19) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (1.4ms)
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2014-03-07 12:35:21) [DELETE]
+  Parameters: {"id"=>"4", "authenticity_token"=>"IdbCm5R7kb4IRsjdr2gxu3+DGGEhhex2nVZAHUfJM54="}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+  [4;36;1mPost Destroy (0.1ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 4[0m
+Redirected to http://localhost:3001/posts
+Completed in 84ms (DB: 0) | 302 Found [http://localhost/posts/4]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2014-03-07 12:35:21) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IN (2,1)) [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (1.8ms)
+Rendered posts/_post (1.2ms)
+Rendered posts/_post (1.2ms)
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/posts]

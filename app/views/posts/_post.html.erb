@@ -1,0 +1,8 @@
+<tr id="post_<%= post.id %>">
+  <td>
+    <h4><%=h post.title %></h4></br>
+    <%=h post.content %></br>
+    <strong><%=h post.user.try(:name) || "匿名" %></strong> | <%= post.created_at.to_s(:db) %>
+  </td>
+  <td><%= link_to 'Edit', edit_post_path(post) %>|<%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>

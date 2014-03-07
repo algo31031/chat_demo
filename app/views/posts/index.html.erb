@@ -1,0 +1,32 @@
+<div class="post" style="width:30%;display:inline-block;vertical-align: top;">  
+  <h1>New post</h1>
+
+  <% form_remote_for(Post.new) do |f| %>
+    <%= f.error_messages %>
+
+    <p>
+      <%= f.label :user_name %><br />
+      <%= f.text_field :user_name %>
+    </p>
+    <p>
+      <%= f.label :title %><br />
+      <%= f.text_field :title %>
+    </p>
+    <p>
+      <%= f.label :content %><br />
+      <%= f.text_area :content %>
+    </p>
+    <p>
+      <%= f.submit 'Create' %>
+    </p>
+  <% end %>
+</div>
+
+<div class="list" style="width:65%;display:inline-block;">
+  <h1>Listing posts</h1>
+
+  <table id="posts_list">
+    <%= render @posts %>
+  </table>
+
+</div>

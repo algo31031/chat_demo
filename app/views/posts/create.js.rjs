@@ -1,0 +1,2 @@
+page.insert_html(:top, "posts_list", render(@post))
+page.visual_effect("highlight", "post_#{@post.id}")
