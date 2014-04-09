@@ -11,3 +11,4 @@ A realtime chat demo, based on Faye.
 `$ thin start -p 3001`
 
 Then type these url in you browser `http://localhost:3001`
+
