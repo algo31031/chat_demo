@@ -1,0 +1,18 @@
+<h1>School Login</h1>
+
+<% unless flash[:error].blank? %>
+  <div class="error">
+    <p><%= flash[:error] %></p>
+  <div>
+<% end %>
+
+<div class="login">
+  <% form_tag "/schools/login" do %>
+    <p>
+      <label>Login: </label>
+      <%= text_field_tag :login %>
+    </p>
+    <p><%= submit_tag "Login" %></p>
+
+  <% end %>
+</div>

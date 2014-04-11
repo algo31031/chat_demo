@@ -1,0 +1,22 @@
+<h1>User Login</h1>
+
+<% unless flash[:error].blank? %>
+  <div class="error">
+    <p><%= flash[:error] %></p>
+  <div>
+<% end %>
+
+<div class="login">
+  <% form_tag "/users/login" do %>
+    <p>
+      <label>School: </label>
+      <%= select_tag :school_id, options_from_collection_for_select(@schools, :id, :name, @schools.first) %>
+    </p>
+    <p>
+      <label>Login: </label>
+      <%= text_field_tag :login %>
+    </p>
+    <p><%= submit_tag "Login" %></p>
+
+  <% end %>
+</div>

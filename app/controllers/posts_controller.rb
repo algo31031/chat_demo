@@ -1,17 +1,20 @@
 class PostsController < ApplicationController
-  # GET /posts
-  # GET /posts.xml
+
+  before_filter :validate_user
+  before_filter :validate_group
+
   def index
-    @posts = Post.find(:all, :include => :user, :order => "created_at DESC")
+    @posts = current_group.posts(:include => :user, :order => "created_at ASC", :limit => 10)
 
     respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @posts }
+      format.html 
     end
   end
 
   def create
-    @post = Post.new(params[:post])
+    @post = current_group.posts.new(params[:post])
+    @post.user_id = current_user.id
+    @post.school_id = current_user.school_id
     @post.save!
 
     respond_to do |format|

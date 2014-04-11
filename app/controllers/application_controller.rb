@@ -4,7 +4,46 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
+  helper_method :current_user, :current_school, :current_group
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+
+  protected
+
+  def validate_school
+    if current_school.blank?
+      redirect_to "/schools/login"
+      return
+    end
+  end
+
+  def validate_user
+    if current_user.blank?
+      redirect_to "/users/login"
+      return
+    end    
+  end
+
+  def validate_group
+    if current_group.blank?
+      redirect_to "/groups"
+      return
+    end    
+  end  
+
+  private
+
+  def current_school
+    session[:current_school]
+  end
+
+  def current_user
+    session[:current_user]
+  end
+
+  def current_group
+    session[:current_group]
+  end
+
 end

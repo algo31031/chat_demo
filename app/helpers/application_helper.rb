@@ -7,5 +7,4 @@ module ApplicationHelper
     Net::HTTP.post_form(uri, :message => message.to_json)
   end
 
-
 end

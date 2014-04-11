@@ -1,0 +1,14 @@
+<% form_for(@group) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <% @users.each do |user| %>
+    <%= check_box_tag :users, user.id, @group.users.include?(user) %>
+  <% end %>
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>
