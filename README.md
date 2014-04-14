@@ -6,9 +6,9 @@ A realtime chat demo, based on Faye.
 
 `$ gem install thin`
 
-`$ rackup faye.ru -s thin -E production`
+`$ thin start `
 
-`$ thin start -p 3001`
+Then type this url in you browser `http://localhost:3000`,  
+you friends could user url like `http://your_ip_address:3000` to chat with you.  
 
-Then type these url in you browser `http://localhost:3001`
 

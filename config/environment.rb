@@ -43,3 +43,5 @@ Rails::Initializer.run do |config|
 end
 
 require 'net/http'
+
+require 'thin'
