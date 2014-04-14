@@ -6,7 +6,10 @@
     <%= f.text_field :name %>
   </p>
   <% @users.each do |user| %>
-    <%= check_box_tag :users, user.id, @group.users.include?(user) %>
+    <p>
+      <label><%=h user.name %></label>
+      <%= check_box_tag :users, user.id, @group.users.include?(user) %>
+    </p>
   <% end %>
   <p>
     <%= f.submit 'Submit' %>

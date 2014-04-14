@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140411091739) do
+ActiveRecord::Schema.define(:version => 20140414030327) do
 
   create_table "group_users", :force => true do |t|
     t.integer  "group_id"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20140411091739) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "created_by_id"
   end
 
   create_table "posts", :force => true do |t|

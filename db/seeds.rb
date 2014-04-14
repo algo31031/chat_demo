@@ -14,3 +14,4 @@ user = User.new(:name => "test_user")
 user.school =school
 user.groups = [group]
 user.save!
+group.update_attribute(:created_by_id, user.id)

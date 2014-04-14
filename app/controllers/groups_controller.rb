@@ -3,7 +3,8 @@ class GroupsController < ApplicationController
   before_filter :validate_school, :only => :destroy
 
   def index
-    @groups = current_user.school.groups
+    @groups = current_user.school.groups.find(:all, :include => :group_users, 
+      :conditions => "group_users.user_id = #{current_user.id} OR groups.created_by_id = #{current_user.id}")
 
     respond_to do |format|
       format.html 

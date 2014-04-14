@@ -29,6 +29,9 @@ class ApplicationController < ActionController::Base
     if current_group.blank?
       redirect_to "/groups"
       return
+    elsif !current_user.groups.include?(current_group)
+      flash[:error] = "sorry, but you've not invited"
+      redirect_to
     end    
   end  
 

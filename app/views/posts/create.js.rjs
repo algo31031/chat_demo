@@ -1,5 +1,3 @@
-# page.insert_html(:top, "posts_list", render(@post))
-# page.visual_effect("highlight", "post_#{@post.id}")
-broadcast("/posts/new") do  
+broadcast("/posts/new", @post.user_id) do  
   render @post
 end

@@ -11,8 +11,14 @@
     var faye = new Faye.Client('http://<%= IPFetcher.get_local_ip %>:9292/faye');
 
     faye.subscribe('/posts/new', function (data) {
-      $("posts_list").insert({top: data.toString()});
-      new Effect.Highlight($("posts_list").childElements()[0].childElements()[0].id);
+      $("posts_list").insert({bottom: data["post"].toString()});
+
+      var post = $("posts_list").childElements().last().childElements().first();
+
+      if(data["user_id"].toString() != "<%= current_user.id %>"){
+        post.setStyle({float: "left"});
+      }
+      new Effect.Highlight(post.id);
     });
   </script>
 </head>
