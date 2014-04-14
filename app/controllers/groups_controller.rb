@@ -26,7 +26,7 @@ class GroupsController < ApplicationController
   end
 
   def edit
-    @group = current_user.groups.find(params[:id])
+    @group = current_user.school.groups.find(params[:id])
     @users = current_user.school.users
   end
 
@@ -48,7 +48,7 @@ class GroupsController < ApplicationController
   end
 
   def update
-    @group = current_user.groups.find(params[:id])
+    @group = current_user.school.groups.find(params[:id])
     @group.name = params[:group][:name]
     @group.group_users.destroy_all
 
