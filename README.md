@@ -1,8 +1,10 @@
 A realtime chat demo, based on Faye.
 
-`$ git@github.com:algo31031/chat_demo.git`
+`$ git clone git@github.com:algo31031/chat_demo.git chat_demo`
 
 `$ cd chat_demo`
+
+`$ gem install faye`
 
 `$ gem install thin`
 

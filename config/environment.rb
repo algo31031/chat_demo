@@ -44,4 +44,6 @@ end
 
 require 'net/http'
 
+require 'faye'
 require 'thin'
+

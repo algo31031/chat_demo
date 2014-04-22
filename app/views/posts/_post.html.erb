@@ -1,8 +1,4 @@
-<tr id="post_<%= post.id %>" >
-  <td>
-    <div style="border:1px solid #666; float:<%= post.user_id == current_user.id ? 'right' : 'left' %>; display:inline-block;">
-      <%=h post.content %></br>
-      <strong><%=h post.user.try(:name) || "匿名" %></strong> | <%= post.created_at.to_s(:db) %>
-    </div>
-  </td>
-</tr>
+<div id="post_<%= post.id %>" style="border:1px solid #666; text-align:<%= post.user_id == current_user.id ? 'right' : 'left' %>; margin-bottom:10px;">
+  <%=h post.content %></br>
+  <strong><%=h post.user.try(:name) || "匿名" %></strong> | <%= post.created_at.to_s(:db) %>
+</div>

@@ -2,7 +2,7 @@
 module ApplicationHelper
 
   def broadcast(channel, user_id, &block)
-    message = {:channel => channel, :data => {:post => capture(&block), :user_id => user_id}}
+    message = {:channel => channel, :data => {:post => capture(&block), :user_id => user_id}, :ext => {:auth_token => FAYE_TOKEN}}
     uri = URI.parse("http://localhost:9292/faye")
     Net::HTTP.post_form(uri, :message => message.to_json)
   end
